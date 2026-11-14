@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "af-blocks/related-posts",
+	"version": "0.1.0",
+	"title": "Related Posts",
+	"category": "widgets",
+	"icon": "list-view",
+	"description": "Posts that share a category or tag with the current post.",
+	"keywords": [ "related", "posts", "similar" ],
+	"textdomain": "af-blocks",
+	"attributes": {
+		"count": {
+			"type": "integer",
+			"default": 3
+		},
+		"taxonomy": {
+			"type": "string",
+			"enum": [ "category", "post_tag" ],
+			"default": "category"
+		},
+		"showImage": {
+			"type": "boolean",
+			"default": true
+		},
+		"showDate": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

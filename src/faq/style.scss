@@ -1,0 +1,39 @@
+/**
+ * FAQ and FAQ item — front end and editor.
+ *
+ * Open/close is native <details>/<summary>: keyboard and screen readers
+ * work without JavaScript.
+ */
+
+.wp-block-af-blocks-faq-item {
+	padding-block: 0.75em;
+	border-bottom: 1px solid currentcolor;
+}
+
+.wp-block-af-blocks-faq-item > summary {
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.wp-block-af-blocks-faq-item > summary:focus-visible {
+	outline: 2px solid currentcolor;
+	outline-offset: 2px;
+}
+
+.wp-block-af-blocks-faq-item__answer {
+	margin-top: 0.5em;
+}
+
+.wp-block-af-blocks-faq-item__answer > :first-child {
+	margin-top: 0;
+}
+
+.wp-block-af-blocks-faq-item__answer > :last-child {
+	margin-bottom: 0;
+}
+
+/* Editor only: the question field (the front end uses <summary>). */
+.wp-block-af-blocks-faq-item__question {
+	margin: 0;
+	font-weight: 700;
+}

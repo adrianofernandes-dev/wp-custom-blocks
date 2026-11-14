@@ -1,0 +1,11 @@
+/**
+ * Callout — editor only.
+ *
+ * In the editor the title field is always present so it can be typed into,
+ * while on the front end an empty title is not rendered at all. Dim the
+ * empty title so it reads as optional.
+ */
+
+.wp-block-af-blocks-callout__title:not(:focus)[data-rich-text-placeholder] {
+	opacity: 0.62;
+}

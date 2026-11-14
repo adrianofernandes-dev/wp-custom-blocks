@@ -1,0 +1,19 @@
+# Dependencies
+/node_modules/
+/vendor/
+
+# build/ is committed on purpose (SPEC §7): the repo works as a zip install.
+
+# Logs and caches
+*.log
+.phpcs-cache
+.eslintcache
+.stylelintcache
+
+# Local tooling
+.wp-env.override.json
+.omc/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

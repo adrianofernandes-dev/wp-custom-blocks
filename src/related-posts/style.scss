@@ -1,0 +1,33 @@
+/**
+ * Related Posts — front end and editor preview.
+ *
+ * The image is rendered at 96px; render.php passes sizes="96px" to match.
+ */
+
+.wp-block-af-blocks-related-posts {
+	padding-left: 0;
+	list-style: none;
+}
+
+.wp-block-af-blocks-related-posts__item + .wp-block-af-blocks-related-posts__item {
+	margin-top: 1rem;
+}
+
+.wp-block-af-blocks-related-posts__link {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.wp-block-af-blocks-related-posts__image {
+	flex: 0 0 96px;
+	width: 96px;
+	height: 96px;
+	object-fit: cover;
+}
+
+.wp-block-af-blocks-related-posts__date {
+	display: block;
+	margin-top: 0.25em;
+	font-size: 0.875em;
+}

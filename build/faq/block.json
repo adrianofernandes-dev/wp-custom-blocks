@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "af-blocks/faq",
+  "version": "0.1.0",
+  "title": "FAQ",
+  "category": "text",
+  "icon": "editor-help",
+  "description": "Questions and answers with optional FAQPage structured data.",
+  "keywords": [
+    "faq",
+    "questions",
+    "accordion",
+    "schema"
+  ],
+  "textdomain": "af-blocks",
+  "attributes": {
+    "outputSchema": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "af-blocks/faq-item",
+	"version": "0.1.0",
+	"title": "FAQ item",
+	"category": "text",
+	"parent": [ "af-blocks/faq" ],
+	"icon": "editor-help",
+	"description": "A question and its answer.",
+	"textdomain": "af-blocks",
+	"attributes": {
+		"question": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"editorScript": "file:./index.js"
+}

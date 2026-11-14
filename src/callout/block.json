@@ -1,0 +1,55 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "af-blocks/callout",
+	"version": "0.1.0",
+	"title": "Callout",
+	"category": "text",
+	"icon": "info-outline",
+	"description": "Highlight a note, tip, warning or alert.",
+	"keywords": [ "notice", "alert", "tip", "warning" ],
+	"textdomain": "af-blocks",
+	"attributes": {
+		"variant": {
+			"type": "string",
+			"enum": [ "info", "success", "warning", "danger" ],
+			"default": "info"
+		},
+		"title": {
+			"type": "string",
+			"source": "html",
+			"selector": ".wp-block-af-blocks-callout__title",
+			"default": ""
+		},
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": ".wp-block-af-blocks-callout__content",
+			"default": ""
+		}
+	},
+	"supports": {
+		"align": [ "wide" ],
+		"color": {
+			"background": true,
+			"text": true
+		},
+		"spacing": {
+			"padding": true,
+			"margin": true
+		},
+		"typography": {
+			"fontSize": true
+		}
+	},
+	"example": {
+		"attributes": {
+			"variant": "info",
+			"title": "Good to know",
+			"content": "Callouts draw attention to a short piece of content."
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

@@ -1,0 +1,48 @@
+/**
+ * Callout — front end and editor.
+ *
+ * The variant only switches a class. Each class sets custom properties;
+ * the rules below read them. Text on every background is #1e1e1e
+ * (contrast above 13:1 on all four tints).
+ */
+
+.wp-block-af-blocks-callout {
+	--af-callout-text: #1e1e1e;
+	--af-callout-bg: #eaf2fb;
+	--af-callout-accent: #1d5f9e;
+
+	box-sizing: border-box;
+	padding: 1rem 1.25rem;
+	border-left: 4px solid var(--af-callout-accent);
+	border-radius: 2px;
+	background-color: var(--af-callout-bg);
+	color: var(--af-callout-text);
+
+	&.is-variant-success {
+		--af-callout-bg: #eaf5ec;
+		--af-callout-accent: #1e7b34;
+	}
+
+	&.is-variant-warning {
+		--af-callout-bg: #fdf3e1;
+		--af-callout-accent: #9a5b00;
+	}
+
+	&.is-variant-danger {
+		--af-callout-bg: #fbeaea;
+		--af-callout-accent: #b32d2e;
+	}
+}
+
+.wp-block-af-blocks-callout__title {
+	margin: 0 0 0.5em;
+	font-weight: 700;
+}
+
+.wp-block-af-blocks-callout__content > :first-child {
+	margin-top: 0;
+}
+
+.wp-block-af-blocks-callout__content > :last-child {
+	margin-bottom: 0;
+}

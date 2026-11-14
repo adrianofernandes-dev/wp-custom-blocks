@@ -1,0 +1,27 @@
+{
+	"name": "af-blocks",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Three custom Gutenberg blocks: Callout, FAQ and Related Posts.",
+	"license": "GPL-2.0-or-later",
+	"engines": {
+		"node": ">=20"
+	},
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php",
+		"start": "wp-scripts start --webpack-copy-php",
+		"lint:js": "wp-scripts lint-js --no-error-on-unmatched-pattern",
+		"lint:css": "wp-scripts lint-style --allow-empty-input",
+		"env:start": "wp-env start",
+		"env:stop": "wp-env stop"
+	},
+	"devDependencies": {
+		"@wordpress/block-editor": "^18.1.0",
+		"@wordpress/blocks": "^16.2.0",
+		"@wordpress/components": "^42.0.0",
+		"@wordpress/env": "^11.17.0",
+		"@wordpress/i18n": "^6.30.0",
+		"@wordpress/scripts": "^35.0.0",
+		"@wordpress/server-side-render": "^6.33.0"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"name": "adriano-fernandes/af-blocks",
+	"description": "Three custom Gutenberg blocks: Callout, FAQ and Related Posts.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"php": ">=8.1"
+	},
+	"require-dev": {
+		"wp-coding-standards/wpcs": "^3.1"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+	"scripts": {
+		"phpcs": "phpcs",
+		"phpcbf": "phpcbf"
+	}
+}
